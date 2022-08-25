@@ -24,13 +24,13 @@
 #section2>article>.txtImg>#txtBox>h6{font-size:  1.4vw;}
 
 #section3{background-color: #111; position: relative;}
-#section3>.s3Back{width: 100%; height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#section3>.s3Back{width: 100%; height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-200%,-50%);}
 #section3>.s3Back>img{width: 100%; height: 100%;}
 .s3BackEvent{animation: heightZero 0.7s forwards;}
 
 @keyframes heightZero{
   0%{transform: translateX(-100%);}
-  100%{transform: translateX(0);}
+  100%{transform: translateX(150%);}
 }
 
 
