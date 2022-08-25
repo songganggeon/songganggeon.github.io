@@ -1,0 +1,30 @@
+@import url(common.css);
+@import url(product_swiper.css);
+    #productMain{background-color: #555; height: 35vw; width: 100%;}
+    #productMain>#productWrap{width: 70%; height: 80%; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end;}
+    #productMain>#productWrap>div{position: relative;}
+    #productMain>#productWrap>div>.subContent{width: 30vw; height: 25vw; overflow: hidden;}
+    #productMain>#productWrap>div>.subContent>div{width: 60vw; height: 25vw; display: flex; transition: all 0.7s;} 
+    #productMain>#productWrap>div>.subContent>div>img{width: 100%; height: 100%;}
+    #productMain>#productWrap>div>.Btn>div{width: 3vw; height: 3vw; position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer;}
+    #productMain>#productWrap>div>.Btn>#right{right: 0;}
+    #productMain>#productWrap>div>.Btn>div>img{width: 100%; height: 100%;}
+    #middle{width: 100%; height: 50vw; margin-top: -15vw;}
+    #middle>img{width: 1%;height: 80%; transition: all 0.7s;}
+    #middle>h3{display: flex; flex-direction: column; justify-content: center; height: 40%; width: 80%; margin: 0 auto; color: #fff; font-size: 1.2vw;}
+    #middle2{width: 100%; height: 60vw; margin-top: 10vw;}
+    #middle2>img{width: 100%; height: 100%;}
+    #middle4{width: 100%;height: 60vw; background-color: #111;}
+    #middle4>.midTxt{display: flex; flex-direction: column; justify-content: center; width: 80%; margin: 0 auto; height: 40%; color: #fff; transition: all 0.7s;}
+    #middle4>.midTxt>h1{font-size: 2vw;}
+    #middle4>.midTxt>p{font-size: 1.5vw;}
+    #middle4>img{transition: all 0.7s;}
+
+    #productWrap>#productSub>h2{font-size: 1.5vw; color: #fff;}
+    #productWrap>#productSub>h2>span:first-child{font-size: 1.2vw;}
+    #productWrap>#productSub>h2>span:last-child{font-size: 1.3vw; color: #888;}
+    #productWrap>#productSub>div{display: flex; margin-top: 2vw; width: 25vw; height: 12vw;}
+    #productWrap>#productSub>div>img{width: 50%; height: 100%; cursor: pointer;}
+
+    .BtnWrap{width: 100%; height: 30vw; position: relative; background: #111;}
+    #topBtn{position: absolute; left: 50%; transform: translateX(-50%); top: 2vw; font-size: 2vw; color: #fff; cursor: pointer;}

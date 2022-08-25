@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Blade&Soul,블레이드&소울2,MMORPG,블레이드&소울,블레이드앤소울">
+    <meta name="description" content="Blade&Soul2">
+    <link href="common/images/logo_Kong.png" rel="shortcut icon" type="image/x-icon">
+    <!-- 파비콘 -->
+    <link rel="stylesheet" href="css/community.css">
+    <!-- 메인 스타일 시트 -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script defer src="https://kit.fontawesome.com/5a6bee9b00.js" crossorigin="anonymous"></script>
+    <title> 블레이드 & 소울 2 - NCSOFT </title>
+    <style>
+        main{height: 120vh;}
+        #serviceHeader{position: relative; overflow: hidden;}
+        #serviceHeader>.serviceLogo{position: absolute; top: 30%; left: 50%; transform: translate(-50%,-30%);}
+        #serviceHeader>div:last-child{display: flex; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+        #serviceHeader>div>form>input{border: none; font-size: 1rem; padding: 12px 50px;}
+        #serviceHeader>div>form>input:focus{outline: none;}
+        #serviceHeader>div>form>button{color: rgb(184, 60, 60); border: none; font-size: 1rem; margin-right: -5px; padding: 12px; background-color: #fff; cursor: pointer;}
+        .serviceHeaderFooter{position: absolute; bottom: 0; color: #fff; width: 1170px; left: 50%; height: 5vh; transform: translateX(-50%);}
+        .serviceHeaderFooter>ul{ width: 100%; height: 100%; display: flex; justify-content: space-between; text-align: center;}
+        .serviceHeaderFooter>ul>li{ background-color: rgb(255,255,255,0.2);width: 25%; height: 3vh; line-height: 3vh; padding: 1vh 0;}
+         .serviceHeaderFooter>ul>li:hover{ background-color: #fff; color: #222; font-weight: bold; border-top-right-radius: 30px;}
+        #inquiry{box-sizing: border-box; font-weight: bold; color: rgb(184, 60, 60); border: 1px solid rgb(184, 60, 60);padding: 12px; background-color: transparent; cursor: pointer;}
+        main>h1{padding: 2vh 0; font-size: 1.5rem; text-align: center; margin-bottom: 3vh;}
+        .firstMenu>li:first-child{background-color: #fff; color: black; border: none;}
+        .firstTxt{margin: 1vw auto 0;}
+        .container{display: flex; justify-content: space-between; margin-bottom: 30px;}
+        .container>.mainTxtSub{position:relative;color:#fff;text-align:center;transform-style:preserve-3d;transform:rotateY(0deg);transition:.7s;  width: 15vw; height: 15vh; font-weight: bold; line-height: 160%; border-radius: 12px; padding: 2vh 2.5vh 3vh;}
+        .container>.mainTxtSub:hover{transform: rotateY(-180deg); width: 15vw; height: 15vh;}
+        .container>.mainTxtSub>.mainH2{width: 100%; height: 100%; border-radius: 12px;}
+        .container>.mainTxtSub>.mainH2>h2{user-select: none; color: #fff; font-size: 1.2rem; text-align: center; line-height: 20vh; }
+        .container>.mainTxtSub>.mainH2,.container>.mainTxtSub>.mainEnd{position: absolute; width: 100%; height: 100%;  top: 50%; left: 50%; transform: translate(-50%,-50%); backface-visibility: hidden;}
+        .container>.mainTxtSub>.mainEnd{width: 100%; height: 100%; background-color: rgb(184, 60, 60); border-radius: 12px; transform: rotateY(180deg); top: 0; left: 0; display: flex; flex-direction: column; justify-content: center;}
+        .container>.mainTxtSub>.mainEnd div:hover{color: rgb(139, 31, 17);}
+        .container>.mainTxtSub>.mainH201{ background: url('common/images/update1.jpg') top;}
+        .container>.mainTxtSub>.mainH202{ background: url('common/images/update2.jpg') center;}
+        .container>.mainTxtSub>.mainH203{ background: url('common/images/update3.jpg') center;}
+        .container>.mainTxtSub>.mainH204{ background: url('common/images/update4.jpg') center;}
+        .container>.mainTxtSub>.mainH205{ background: url('common/images/update5.jpg') center;}
+        .container>.mainTxtSub>.mainH206{ background: url('common/images/update6.jpg') center;}
+        .container>.mainTxtSub>.mainH207{ background: url('common/images/update7.jpg') center;}
+        .container>.mainTxtSub>.mainH208{ background: url('common/images/background_bs2.jpg') top/cover;}
+        .container>.mainTxtSub>.mainH209{ background: url('common/images/hover1.png') top/cover;}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="section" id="section1">
+        <!-- ============ 메뉴 영역 ============ -->
+        <article class="navWrap">
+            <h6 class="hidden">Blade&Soul2</h6>
+            <div>
+                <a href="index.html">
+                    <img src="common/images/logoTransport.png" alt="">
+                </a>
+            </div>
+            <nav>
+                <ul class="menuWrap">
+                    <li>
+                        <a href="about.html">게임정보</a>
+                        <ul>
+                            <li><a href="about.html#section2">스토리</a></li>
+                            <li><a href="about.html#section2">종족</a></li>
+                            <li><a href="about.html#section3">콘텐츠</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="notice.html">새소식</a>
+                        <ul>
+                            <li><a href="notice_notice.html">공지사항</a></li>
+                            <li><a href="notice_event.html">이벤트</a></li>
+                            <li><a href="notice_update.html">업데이트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guide.html">가이드북</a></li>
+                    <li>
+                        <a href="community.html">커뮤니티</a>
+                        <ul>
+                            <li><a href="community_new.html">최신</a></li>
+                            <li><a href="community_pop.html">인기</a></li>
+                            <li><a href="community_image.html">갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://login.plaync.com/nclogin/signin?site_id=13&return_url=https%3A%2F%2Fwww.plaync.com%2Fkr%2Findex">문파</a>
+                        <ul>
+                        <li><a href="https://login.plaync.com/nclogin/signin?site_id=13&return_url=https%3A%2F%2Fwww.plaync.com%2Fkr%2Findex">장원</a></li>
+                        <li><a href="https://login.plaync.com/nclogin/signin?site_id=13&return_url=https%3A%2F%2Fwww.plaync.com%2Fkr%2Findex">문파 모집</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">고객센터</a></li>
+                    <li id="allMenu"><a href="#"><i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="sidebar">
+                            <div class="headerSide">
+                                <a href="index.html">
+                                    <img src="common/images/logo01.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                <ul>
+                                    <li><a href="about.html">게임정보</a></li>
+                                    <li><a href="notice.html">새소식</a></li>
+                                    <li><a href="guide.html">가이드북</a></li>
+                                    <li><a href="community.html">커뮤니티</a></li>
+                                    <li><a href="#">문파</a></li>
+                                    <li><a href="service.html">고객센터</a></li>
+                                </ul>
+                                <hr>
+                                <h3>PLAYNC게임</h3>
+                                <ul class="playNc">
+                                    <li><a href="https://lineagem.plaync.com/">리니지W</a></li>
+                                    <li><a href="https://tricksterm.plaync.com/">트릭스터M</a></li>
+                                    <li><a href="https://h3.plaync.com/">프로야구H3</a></li>
+                                    <li><a href="https://lineage2m.plaync.com/kr/">리니지2M</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+        <div id="eventPng">
+            <img src="common/images/event.png" alt="">
+            <div class="eventP">
+                <div class="xBtn">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <a href="about.html">
+                    <h5>포화란: 바다뱀 보급기지</h5>
+                    <h2>업데이트 기념 보상</h2>
+                    <h6>퀴즈의 답을 쿠폰 코드에 입력하세요!</h6>
+                </a>
+            </div>
+        </div>
+        <div class="subMenu">
+            <div class="subItem subItem01"
+                onclick="window.open(`https://play.google.com/store/apps/details?id=com.ncsoft.bns219`)"></div>
+            <div class="subItem subItem02"
+                onclick="window.open(`https://play.google.com/store/apps/details?id=com.ncsoft.bns219`)"></div>
+            <div class="subItem subItem03" onclick="window.open(`https://ncpurple.com/kr/intro/index`)"></div>
+            <div id="subItem04" onclick="window.scrollTo(0,0),upPage()">
+                <img src="common/images/upBtn1.png" alt="">
+            </div>
+        </div>
+        <div class="noticeWrap">
+            <h6 class="hidden">background</h6>
+            <!-- 1. 배너광고 -->
+            <div id="serviceHeader">
+                <div>
+                        <img src="common/images/serviceHeader.jpg" alt="">
+                </div>
+                <div class="serviceLogo">
+                    <a href="service.html">
+                        <img src="common/images/logoTransport.png" alt="">
+                    </a>
+                </div>
+                <div class="serviceHeaderFooter">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-shield"></i> 계정 및 보안</a></li>
+                        <li><a href="#"><i class="fa-solid fa-computer"></i> 시스템 문제 해결</a></li>
+                        <li><a href="#"><i class="fa-solid fa-comment-dollar"></i> 결제 문제</a></li>
+                        <li><a href="#"><i class="fa-solid fa-triangle-exclamation"></i> 신고하기</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <form action="#">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="search" placeholder="무엇이 궁금하신가요?" autofocus>
+                    </form>
+                </div>
+            </div>
+            <div id="bannerWrap">
+                    <div class="firstTxt">
+                        <h1>고객센터</h1>
+                                <button id="inquiry">
+                                    <i class="fa-solid fa-pen-line"></i>
+                                    문의하기
+                                </button>
+                </div>
+                <main>
+                    <h2>자주하는 질문</h2>
+                    <div class="container container01">
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH201">
+                                <h2>게임이용/오류</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">리커버리 실드 효과를 제거하고 싶어요.</a></div>
+                                <div><a href="#">NGS 오류메시지를 보았어요.</a></div>
+                                <div><a href="#">아이템이 사라졌어요.</a></div>
+                                <div><a href="#">게임과 관련하여 궁금한 점이 있어요.</a></div>
+                            </div>
+                        </div>
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH202">
+                                <h2>로그인/보안</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">로그인이 어렵다면 여기를 주목해주세요.</a></div>
+                                <div><a href="#">2차 비밀번호를 잊어버렸어요.</a></div>
+                                <div><a href="#">게임 접속 제한/제재 되었어요.</a></div>
+                                <div><a href="#">ID가 보호모드로 전환되었어요.</a></div>
+                            </div>
+                        </div>
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH203">
+                                <h2>이벤트</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">이벤트 보상이 들어오지 않았어요.</a></div>
+                                <div><a href="#">던전 이벤트 보상이 우편함으로 왔어요.</a></div>
+                                <div><a href="#">이그니션 불꽃축제가 궁금해요.</a></div>
+                                <div><a href="#">하이퍼 버닝 이벤트를 자세히 알고 싶어요.</a></div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="container container02">
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH204">
+                                <h2>게임이용/오류</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">리커버리 실드 효과를 제거하고 싶어요.</a></div>
+                                <div><a href="#">NGS 오류메시지를 보았어요.</a></div>
+                                <div><a href="#">아이템이 사라졌어요.</a></div>
+                                <div><a href="#">게임과 관련하여 궁금한 점이 있어요.</a></div>
+                            </div>
+                        </div>
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH205">
+                                <h2>로그인/보안</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">로그인이 어렵다면 여기를 주목해주세요.</a></div>
+                                <div><a href="#">2차 비밀번호를 잊어버렸어요.</a></div>
+                                <div><a href="#">게임 접속 제한/제재 되었어요.</a></div>
+                                <div><a href="#">ID가 보호모드로 전환되었어요.</a></div>
+                            </div>
+                        </div>
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH206">
+                                <h2>이벤트</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">이벤트 보상이 들어오지 않았어요.</a></div>
+                                <div><a href="#">던전 이벤트 보상이 우편함으로 왔어요.</a></div>
+                                <div><a href="#">이그니션 불꽃축제가 궁금해요.</a></div>
+                                <div><a href="#">하이퍼 버닝 이벤트를 자세히 알고 싶어요.</a></div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="container container03">
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH207">
+                                <h2>게임이용/오류</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">리커버리 실드 효과를 제거하고 싶어요.</a></div>
+                                <div><a href="#">NGS 오류메시지를 보았어요.</a></div>
+                                <div><a href="#">아이템이 사라졌어요.</a></div>
+                                <div><a href="#">게임과 관련하여 궁금한 점이 있어요.</a></div>
+                            </div>
+                        </div>
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH208">
+                                <h2>로그인/보안</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">로그인이 어렵다면 여기를 주목해주세요.</a></div>
+                                <div><a href="#">2차 비밀번호를 잊어버렸어요.</a></div>
+                                <div><a href="#">게임 접속 제한/제재 되었어요.</a></div>
+                                <div><a href="#">ID가 보호모드로 전환되었어요.</a></div>
+                            </div>
+                        </div>
+                        <div class="mainTxtSub">
+                            <div class="mainH2 mainH209">
+                                <h2>이벤트</h2>
+                            </div>
+                            <div class="mainEnd">
+                                <div><a href="#">이벤트 보상이 들어오지 않았어요.</a></div>
+                                <div><a href="#">던전 이벤트 보상이 우편함으로 왔어요.</a></div>
+                                <div><a href="#">이그니션 불꽃축제가 궁금해요.</a></div>
+                                <div><a href="#">하이퍼 버닝 이벤트를 자세히 알고 싶어요.</a></div>
+                            </div>    
+                        </div>
+                    </div>
+                </main>
+                <div class="footerNotice">
+                    <button id="footerBtn"><i></i></button>
+                    <footer class="footerWrap" style="position: absolute;bottom: 0; transform: translate(0);">
+                        <div class="footerImg">
+                            <div>
+                                <a id="footerImg1" href="https://bns2.inven.co.kr/">
+                                    <!-- <img src="common/images/youtube_logo.png" alt="유튜브" title="유튜브 바로가기"> -->
+                                </a>
+                            </div>
+                            <div>
+                                <a id="footerImg2" href="https://www.youtube.com/channel/UCo-9ovAJ6Ffo2mEI85nw6jg">
+                                    <!-- <img src="common/images/instar_logo.png" alt="인스타그램" title="인스타그램 바로가기"> -->
+                                </a>
+                            </div>
+                            <div>
+                                <a id="footerImg3"
+                                    href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fprivacy%2Fconsent%2Fpipa%2F%3Fparams%255Bpft_surface%255D%3Dfacebook_comet%26params%255Bis_new_user_blocking_flow%255D%3Dfalse%26params%255Bpft_session_key%255D%3D11f6a15d-8a5f-4384-a439-89f3a10b74cf%26params%255Bis_existing_user_blocking_flow%255D%26source%3Dpipa_blocking_flow">
+                                    <!-- <img src="common/images/facebook_logo.png" alt="페이스북" title="페이스북 바로가기"> -->
+                                </a>
+                            </div>
+                            <div>
+                                <a id="footerImg4" href="https://www.instagram.com/bladeandsoul2.official/?hl=ko">
+                                    <!-- <img src="common/images/kakao_logo.png" alt="카카오톡" title="카카오톡 바로가기"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div>
+                            <ul class="footerMenu">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                                <li><a href="#"><strong>청소년 보호 정책</strong></a></li>
+                                <li><a href="#">커뮤니티정책</a></li>
+                                <li><a href="#">운영정책</a></li>
+                            </ul>
+                        </div>
+                        <hr style="border: 1px solid #222;">
+                        <div>
+                            <address class="footerP">
+                                상호 (주)엔씨소프트 대표 김택진 사업자 등록번호 144-85-04244 통신판매업신고 제2013-경기성남-1268호 사업자정보확인
+                                주소 경기도 성남시 분당구 대왕판교로 644번길 12 모바일게임 고객상담 1566-7004 팩스 02-2186-3499 이메일 credit@ncsoft.com
+                                Blade & Soul 2 ® is a registered trademark of NCSOFT Corporation. Ⓒ NCSOFT Corporation.
+                                All Rights
+                                Reserved.
+                            </address>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/notice.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+    </script>
+</body>
+</html>

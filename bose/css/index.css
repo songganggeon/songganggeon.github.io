@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('common.css');
+@import url('index_swiper.css');
+
+
+#section1{background-color: #111;}
+#bgVideo{width: 50%; height: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+@keyframes fullscreen{
+  0%{width: 50%; height: 50%;}
+  100%{width: 100%; height: auto;}
+}
+.active{animation: fullscreen 1s ease forwards;}
+#section2>article{display: flex;  align-items: flex-end;  background-color: #111; width: 300vw; height: 100%; overflow: hidden;}
+#section2>article>.firstImg>div{position: absolute; display: flex; width: 500vw; height: 80%; bottom: 0; left: 0; transition: all 0.7s;}
+#section2>article>.firstImg{cursor: url('../common/images/arrow_left.png') 20 30, auto; width: 50vw; height: 80%;  transition: all 0.3s; position: relative; z-index: 998; background-color: #111; overflow: hidden;}
+#section2>article>.firstImg>div>img{width: 50vw; height: 100%;}
+#section2>article>.txtImg>.imgWrap{position: absolute;  display: flex; left: 50%; bottom: 0 ; width: 200%; transition: all 0.7s;}
+#section2>article>.txtImg>.imgWrap>div{width: 25vw; height: 20vw; cursor: url('../common/images/arrow.png') 20 30,auto;}
+#section2>article>.txtImg>.imgWrap img{width: 100%; height: 100%;}
+#section2>article>.txtImg{display: flex;flex-direction: column;}
+#section2>article>.txtImg>#txtBox{color: #fff; position: absolute; text-align: center; right: 20%; top: 50%; transform: translate(-20%,-50%); transition: all 0.7s;}
+#section2>article>.txtImg>#txtBox>h2{font-size:  2vw;}
+#section2>article>.txtImg>#txtBox>h6{font-size:  1.4vw;}
+
+#section3{background-color: #111; position: relative;}
+#section3>.s3Back{width: 100%; height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#section3>.s3Back>img{width: 100%; height: 100%;}
+.s3BackEvent{animation: heightZero 0.7s forwards;}
+
+@keyframes heightZero{
+  0%{transform: translateX(-100%);}
+  100%{transform: translateX(0);}
+}
+
+
+#section4{background: #666; width: 100%; height: 60vw;}
+#section4>#s4Txt{color: #fff; padding: 7vw 3vw 3vw;}
+#section4>#s4Txt>p{font-size: 1vw;}
+#section4>#s4Txt>p>span{font-size: 2.5vw; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;}
+#section4>#s4Img{width: 95%; margin: 0 auto; height: 30vw; display: flex; justify-content: space-between; position: relative;}
+#section4>#s4Img>div:first-child{position: absolute; bottom: 0; width: 40vw; height: 20vw; left: 0;}
+#section4>#s4Img>div:last-child{position: absolute; right: 0; width: 50vw; height: 35vw;}
+#section4>#s4Img>div img{width: 100%; height: 100%;}
+
+
+#section5{background: #000; height: 40vh; position: relative;}
+.followBose{color: #fff; position: absolute; top: 50%; left: 5%; transform: translate(-5%,-50%);}
+.followBose>h1{font-size: 3vw; transform: translateX(-100%); transition: all 0.7s;}
+.followBose>h6{font-size: 1.2vw; transform: translateX(-120%); transition: all 1s;}
+
+#section6{background: #000; height: 120vh;}

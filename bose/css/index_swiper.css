@@ -1,0 +1,65 @@
+ .swiper {
+    position: relative;
+     width: 100%;
+     /* height: 54vh; */
+     height: 54vh;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+ }
+
+ .swiper-slide {
+    position: relative;
+    width: 100%; height: 100%;
+    z-index: 1 !important;
+     text-align: center;
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+ }
+.swiper-slide>a>img{width: 80%; height: 70%;}
+/* .swiper-slide>a>img:hover::before{filter: drop-shadow(1vw 1vw 5vw rgb(179, 20, 179))} */
+.swiper-slide>a>img:hover{filter: drop-shadow(2vw 2vw 10vw rgb(139, 139, 139));}
+
+
+.swiper-button-next {
+    background: url('../common/images/arrow_metal.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform:rotate(180deg);
+}
+
+.swiper-button-prev{
+    background: url('../common/images/arrow_metal.png') no-repeat;
+        background-size: 100% auto;
+            background-position: center;
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+ @media (max-width: 760px) {
+     .swiper-button-next {
+         right: 20px;
+         transform: rotate(90deg);
+     }
+
+     .swiper-button-prev {
+         left: 20px;
+         transform: rotate(90deg);
+     }
+ }
+
+ .swiper>h2{user-select: none; font-size: 6.5vw; color: rgba(255, 255, 255, 0.7); position: absolute; z-index: 10; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+ .swiper>h2>span{font-size: 4.5vw;}

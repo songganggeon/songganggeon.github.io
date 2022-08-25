@@ -1,0 +1,252 @@
+@import url("aboutBtn.css");
+@import url("header.css");
+@import url("footer.css");
+@font-face {
+  font-family: 'HeirofLightBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{margin: 0;padding: 0;}
+html { overflow: hidden; }
+html,body { display: block;width: 100%;height: 100%;margin: 0; }
+.section {width: 100%;height: 100%;position: relative; }
+.hidden{display: none;}
+a,a:link,a:visited{ display: block; color: inherit; text-decoration: none;}
+ul{ list-style: none;}
+
+  #section1{background: #222;}
+
+
+ /* 메인 영역 */
+  .aboutBg{width: 100%; height: 100%;}
+  #aboutPage1{transition: all 3s; width: 100vw; height: 100vh;  position: relative;animation: aboutVideo 0.7s ease-in-out;}
+  @keyframes aboutVideo{
+    0%{transform: scale(0.5,0.5);}
+    100%{transform: scale(1,1);}
+  }
+
+  .aboutP{transition: all 3s; position: absolute; animation:aboutp 3s ease-in-out; z-index: 30; right: 5%; top: 50%; transform: translate(-5%,-50%); color: #fff; text-shadow: 3px 3px 3px gray;}
+  .aboutP>h1{font-size: 2rem; font-family: 'HeirofLightBold';}
+  .aboutP>p{text-align: justify; font-size: 1.2rem;}
+  @keyframes aboutp{
+        0%{opacity: 0; transform: translate(-50%,-100%);}
+        100%{opacity: 1; transform: translateX(-5%,-50%);}
+  }
+  .aboutMain{display: grid; grid-template-columns: 25% 25% 25% 25%; width: 100%; height: 100%;  background-color: black;}
+  .aboutItem{position: relative; width: 100%; height: 100%;  z-index: 1;transition: all 0.7s;font-family: 'HeirofLightBold';}
+
+  .action{z-index: 2; width: 100vw; height: 100vh; overflow: hidden;}
+  .aboutItem>h2{transition: all 0.7s; font-size: 2.2vw; text-align: center; margin: 30vh 0; color: #fff;}
+  .aboutItem:hover{background-blend-mode: multiply;
+    background-color: #731a1a77;}
+  .aboutItem:hover>h2>button{padding: 3vw; font-size: 2rem; border: none;}
+  .aboutItem01{background: url("../common/images/bg_world01.jpg") no-repeat center center/cover;}
+  .aboutItem02{background: url("../common/images/bg_world02.jpg") no-repeat center center/cover;}
+  .aboutItem03{background: url("../common/images/bg_world03.jpg") no-repeat center center/cover;}
+  .aboutItem04{background: url("../common/images/bg_world04.jpg") no-repeat center center/cover;}
+    
+    #content>div:first-child{position: absolute; bottom: 3vw; left: 3vw; font-size: 5vw; color: #fff;}
+    #close{ cursor: pointer; display: none; position: absolute; top: 20%; left: 95%; transform: translate(-95%,-20%); color: #fff; font-size: 3rem; z-index: 3;}
+    #close:hover{animation: closeAni 0.5s infinite;}
+    @keyframes closeAni{
+      0%{ position: absolute; top: 20%; left: 95%;transform: translate(-95%, -20%) rotate(0);}
+      100%{position: absolute; top: 20%; left: 95%;transform: translate(-95%, -20%) rotate(360deg)
+      ;}
+    }
+
+
+
+  h2>button{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); cursor: pointer; border: 3px solid #fff; padding: 15px 30px; color: #fff; background-color: transparent; border-radius: 8px;}
+  .worldview{display: none; flex-direction: column; margin-top: 250px; align-items: center; justify-content: center; font-size: 1.2rem; text-align: center; color: #fff; text-shadow: 1px 1px 0 gray; }
+  .worldview span{color: #cc8e87; font-size: 1.6rem;}
+
+  @keyframes world{
+    0%{transform: translateX(-400px);}
+    100%{transform: translateX(0);}
+  }
+
+
+
+  .zongWrap{display: none; width: 100vw; justify-content: space-around; font-size: 3rem; color: #fff; text-shadow: 3px 3px 5px gray;}
+  .zong{opacity: 0; animation: zong 3s forwards; width: 100%; display: flex; margin-top: 128px; justify-content: space-around;}
+  .zong p{font-size: 0.9rem;}
+  .zong h3{text-align: center;}
+
+  @keyframes zong{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+
+  #episode{display: none; width: 100vw; height: 100vh; position: relative;}
+  #episode>.episodeBg{position: relative; top: 0; left: 0; width: 100%; height: 100%;}
+  #episode>.episodeBg>.episodeWrap{position: absolute; z-index: 10;top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}
+  #episode>.episodeBg>.episodeWrap>h1{font-size: 2.5vw;}
+  #episode>.episodeBg>.episodeWrap>p{font-size: 1.5vw;}
+
+
+
+  #section4{width: 100%; height: 100%;}
+  .weapon{ display: none; width: 100%; height: 100%; position: relative;}
+/*   .weapon ul{ width: 50%; height: 5vh;  line-height: 5vh;  margin: 0 auto; display: flex; color: #fff; justify-content: space-between; background-color: rgba(0, 0, 0, 0.7); font-size: 1.5rem; margin-top: 200px;}
+  .weapon ul li{ cursor: pointer; display: inline-block; width: 15%; text-align: center; }
+  .weapon ul li:hover{  background-color:rgba(140,31,31,0.7)}
+  .weapon > .weaponVideo{ margin-top: -10%; width: 50%; height: 50%; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+  .weaponVideo > iframe{width: 100%; height: 100%;}
+ */
+  
+
+  /* #section3{background: url(../common/images/);} */
+
+  #section3{position: relative; background: url('../common/images/bg-contents.jpg') no-repeat center/cover;}
+  .sc3item{position: absolute; width: 20%; height: 20%; overflow: hidden;}
+  .sc3item06{width: 30%; height: 30%; z-index: 30;}
+  .sc3item06>a>img{width: 100%; height: 100%;}
+  .sc3item>a{width: 100%; height: 100%; transition: all 0.6s;}
+  .sc3item>a>p{font-size: 1vw; transition: all 0.6;}
+  .sc3item>a:hover{transform: scale(0.9,0.9); filter: grayscale(80%);}
+  .sc3item>a:hover>p{animation: fontWeight 0.7s ease-in-out forwards; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; z-index: 100;}
+
+  @keyframes fontWeight{
+      0%{font-size: 1vw;}
+    100%{font-size: 1.5vw;}
+  }
+
+
+
+  /* .sc3item01{top: 10%; left: 20%; transform: translate(-20%,-10%);}
+  .sc3item02{top: 30%; left: 30%; transform: translate(-30%,-20%);}
+  .sc3item03{top: 50%; left: 40%; transform: translate(-40%,-30%);}
+  .sc3item04{top: 70%; left: 50%; transform: translate(-50%,-40%);}
+  .sc3item05{ top: 50%; left: 100%; transform: translate(-100%,-50%);z-index: 2; }
+  .sc3item06{width: 30%;height: 30%;top: 30%; left: 80%; transform: translate(-80%,-30%);} */
+
+
+
+
+    .mainTxt{transition: all 0.7s; transform: translateX(-300%);}
+
+
+    #galleryWrap>#galleryBox {
+      overflow: hidden;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -80%);
+      width: 59vw;
+      height: 45vw;
+    }
+  
+    #galleryBox>#gallery {
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    /* 각 이미지 */
+    #gallery>li {
+      overflow: hidden;
+      width: 22vw;
+      height: 22vw;
+      margin: 1vw;
+      transform: scale(1);
+      position: relative;
+      border-radius: 1.5vw;
+      z-index: 8;
+    }
+  
+    #gallery>li:nth-child(3) {
+      transform: scale(1.35);
+      z-index: 9;
+      overflow: visible;
+    }
+  
+    /* 각 이미지에 있는 반투명 박스 */
+    #gallery>li::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  
+    #gallery>li:nth-child(3)::before {
+      opacity: 0;
+    }
+  
+    /* 각 이미지 삽입 ===> 반드시 클래스를 활용해서 삽입 */
+    .gallery01 {
+      background: url('../common/images/weapon4.png') center/cover;
+      ;
+    }
+  
+    .gallery02 {
+      background: url('../common/images/weapon5.png') center/cover;
+      ;
+    }
+  
+    .gallery03 {
+      background: url('../common/images/weapon1.png') center/cover;
+    }
+  
+    .gallery04 {
+      background: url('../common/images/weapon2.png') center/cover;
+      ;
+    }
+  
+    .gallery05 {
+      background: url('../common/images/weapon3.png') center/cover;
+    }
+  
+  
+    /* 버튼 공통사항 */
+    #galleryWrap .btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 149px;
+      cursor: pointer;
+    }
+  
+    .leftBtn {
+      left: 7vw;
+      background: url('../common/images/left_btn.png');
+    }
+  
+    .rightBtn {
+      right: 7vw;
+      background: url('../common/images/right_btn.png');
+    }
+  
+    #gallery h2 {
+      color: #fff;
+      text-shadow: 2px 1px 1px #999;
+      position: absolute;
+      font-size: 2.5rem;
+      top: -5vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    #gallery p {
+      text-align: center;
+      width: 80vw;
+      color: #fff;
+      position: absolute;
+      font-size: 0.9rem;
+      bottom: -5vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+
+
+
+
+  #eventPng{display: none;}
+  

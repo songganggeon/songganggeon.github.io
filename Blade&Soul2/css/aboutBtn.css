@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.playBtn{
+  font-family: 'HeirofLightBold';
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+
+  /* width: 530px;
+    height: 546px; */
+  /* background-color: transparent; */
+
+  padding: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  margin-right: 50px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+
+
+.playBtn>h2 {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.playBtn:hover>h2 {
+  opacity: 1;
+}
+
+
+.playBtn1:hover {
+  background: url('../common/images/npcBtn1.png') no-repeat center center/cover;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(140, 31, 31, 0.7),
+    0 0 25px rgba(140, 31, 31, 0.7),
+    0 0 50px rgba(140, 31, 31, 0.7),
+    0 0 200px rgba(140, 31, 31, 0.7);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, .0005);
+}
+
+.playBtn2:hover {
+  background: url('../common/images/npcBtn.png') no-repeat bottom center/cover;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(140, 31, 31, 0.7),
+    0 0 25px rgba(140, 31, 31, 0.7),
+    0 0 50px rgba(140, 31, 31, 0.7),
+    0 0 200px rgba(140, 31, 31, 0.7);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, .0005);
+}
+.playBtn3:hover {
+  background: url('../common/images/npcBtn5.png') no-repeat bottom center/cover;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(140, 31, 31, 0.7),
+    0 0 25px rgba(140, 31, 31, 0.7),
+    0 0 50px rgba(140, 31, 31, 0.7),
+    0 0 200px rgba(140, 31, 31, 0.7);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, .0005);
+}
+.playBtn4:hover {
+  background: url('../common/images/npcBtn6.png') no-repeat bottom center/cover;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(140, 31, 31, 0.7),
+    0 0 25px rgba(140, 31, 31, 0.7),
+    0 0 50px rgba(140, 31, 31, 0.7),
+    0 0 200px rgba(140, 31, 31, 0.7);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, .0005);
+}
+
+.app:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+
+.app:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+
+
+.playBtn:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+
+.playBtn:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+
+.playBtn span {
+  position: absolute;
+  display: block;
+}
+
+.app span {
+  position: absolute;
+  display: block;
+}
+
+.app span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(140, 31, 31, 0.7));
+  animation: animate1 1s linear infinite;
+}
+
+.playBtn span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(140, 31, 31, 0.7));
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.app span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(140, 31, 31, 0.7));
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.playBtn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(140, 31, 31, 0.7));
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.app span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgba(140, 31, 31, 0.7));
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+
+.playBtn span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgba(140, 31, 31, 0.7));
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+
+.playBtn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgba(140, 31, 31, 0.7));
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+.app span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgba(140, 31, 31, 0.7));
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}

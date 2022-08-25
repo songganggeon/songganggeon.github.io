@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Blade&Soul,블레이드&소울2,MMORPG,블레이드&소울,블레이드앤소울">
+    <meta name="description" content="Blade&Soul2">
+    <meta http-equiv="Author" content="Kong">
+    <meta http-equiv="Build" content="2022.7.8">
+    <link href="common/images/logo_Kong.png" rel="shortcut icon" type="image/x-icon">
+    <!-- 파비콘 -->
+    <link rel="stylesheet" href="css/notice.css">
+    <!-- 메인 스타일 시트 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script defer src="https://kit.fontawesome.com/5a6bee9b00.js" crossorigin="anonymous"></script>
+    <title> 블레이드 & 소울 2 - NCSOFT </title>
+    <style>        
+        /* 변경사항 */
+        .firstMenu>li:nth-child(2){background-color: #fff; color: black; border: none;}
+        
+        /* 공통사항 */
+       .swiper-slide{width: 100%; height: 510px;}
+       /* 슬라이드 시작 */
+        .swiper-pagination{ position: absolute; width: 100%; text-align: right; bottom: 60px; left: 10%; transform: translate(-10%); }
+        .swiper-pagination-bullet{ width: 10px; height: 10px; background-color: #fff;
+        box-shadow: 1px 1px 2px #999; opacity: 0.7;}
+        .swiper-pagination-bullet-active{
+        width: 30px; background-color: red; border-radius: 10px;}
+    </style>
+</head>
+
+<body>
+    <section class="section" id="section1">
+        <!-- ============ 메뉴 영역 ============ -->
+        <article class="navWrap">
+            <h6 class="hidden">Blade&Soul2</h6>
+            <div>
+                <a href="index.html">
+                    <img src="common/images/logoTransport.png" alt="">
+                </a>
+            </div>
+            <nav>
+                <ul class="menuWrap">
+                    <li>
+                        <a href="about.html">게임정보</a>
+                        <ul>
+                            <li><a href="about.html#section2">스토리</a></li>
+                            <li><a href="about.html#section2">종족</a></li>
+                            <li><a href="about.html#section3">콘텐츠</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="notice.html">새소식</a>
+                        <ul>
+                            <li><a href="notice_notice.html">공지사항</a></li>
+                            <li><a href="notice_event.html">이벤트</a></li>
+                            <li><a href="notice_update.html">업데이트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guide.html">가이드북</a></li>
+                    <li>
+                        <a href="community.html">커뮤니티</a>
+                        <ul>
+                            <li><a href="community_new.html">최신</a></li>
+                            <li><a href="community_pop.html">인기</a></li>
+                            <li><a href="community_image.html">갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://login.plaync.com/nclogin/signin?site_id=13&return_url=https%3A%2F%2Fwww.plaync.com%2Fkr%2Findex">문파</a>
+                        <ul>
+                        <li><a href="https://login.plaync.com/nclogin/signin?site_id=13&return_url=https%3A%2F%2Fwww.plaync.com%2Fkr%2Findex">장원</a></li>
+                        <li><a href="https://login.plaync.com/nclogin/signin?site_id=13&return_url=https%3A%2F%2Fwww.plaync.com%2Fkr%2Findex">문파 모집</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">고객센터</a></li>
+                    <li id="allMenu"><a href="#"><i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="sidebar">
+                            <div class="headerSide">
+                                <a href="index.html">
+                                    <img src="common/images/logo01.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                <ul>
+                                    <li><a href="about.html">게임정보</a></li>
+                                    <li><a href="notice.html">새소식</a></li>
+                                    <li><a href="guide.html">가이드북</a></li>
+                                    <li><a href="community.html">커뮤니티</a></li>
+                                    <li><a href="#">문파</a></li>
+                                    <li><a href="service.html">고객센터</a></li>
+                                </ul>
+                                <hr>
+                                <ul class="playNc">
+                                    <h3>PLAYNC게임</h3>
+                                    <li><a href="https://lineagem.plaync.com/">리니지W</a></li>
+                                    <li><a href="https://tricksterm.plaync.com/">트릭스터M</a></li>
+                                    <li><a href="https://h3.plaync.com/">프로야구H3</a></li>
+                                    <li><a href="https://lineage2m.plaync.com/kr/">리니지2M</a></li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+        <div id="eventPng">
+            <img src="common/images/event.png" alt="">
+            <div class="eventP">
+                <div class="xBtn">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <a href="about.html">
+                    <h5>포화란: 바다뱀 보급기지</h5>
+                    <h2>업데이트 기념 보상</h2>
+                    <h6>퀴즈의 답을 쿠폰 코드에 입력하세요!</h6>
+                </a>
+            </div>
+        </div>
+        <div class="subMenu">
+            <div class="subItem subItem01"
+                onclick="window.open(`https://play.google.com/store/apps/details?id=com.ncsoft.bns219`)"></div>
+            <div class="subItem subItem02"
+                onclick="window.open(`https://play.google.com/store/apps/details?id=com.ncsoft.bns219`)"></div>
+            <div class="subItem subItem03" onclick="window.open(`https://ncpurple.com/kr/intro/index`)"></div>
+            <div id="subItem04" onclick="window.scrollTo(0,0),upPage()">
+                <img src="common/images/upBtn1.png" alt="">
+            </div>
+        </div>
+        <article class="noticeWrap">
+            <h6 class="hidden">background</h6>
+    <!-- 1. 배너광고 -->
+           <article id="bannerWrap">
+        <!-- 100 -->
+                <div class="swiper mySwiper">
+                    <!-- 슬라이드 시작 -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ad01"><span class="hidden">백그라운드 이미지1</span></div>
+                        <div class="swiper-slide ad02"><span class="hidden">백그라운드 이미지2</span></div>
+                        <div class="swiper-slide ad03"><span class="hidden">백그라운드 이미지3</span></div>
+                    </div>
+                    <div class="swiper-pagination bullet"></div>
+                </div> <!-- 슬라이드 끝 -->
+                    <div>
+                        <div class="firstTxt">
+                            <h1>공지사항</h1>
+                            <form action="#">
+                                <select name="serch" id="serch">
+                                    <option value="제목">제목</option>
+                                    <option value="내용">내용</option>
+                                    <option value="제목+내용">제목+내용</option>
+                                    <div class="searchWrap">
+                                        <input type="search" placeholder="검색어를 입력해주세요">
+                                        <button>
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <nav id="noticeMenu">
+                        <ul class="firstMenu">
+                            <li><a href="notice.html">전체</a></li>
+                            <li><a href="notice_notice.html">공지</a></li>
+                            <li><a href="notice_update.html">업데이트</a></li>
+                            <li><a href="notice_event.html">이벤트</a></li>
+                        </ul>
+                    </nav>
+                    <main>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/20(수) 업데이트 사전 안내</a></div><div>2022-07-15</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 2022년 7월 13일 (수) 정기점검 이후 예정 사항</a></div><div>2022-07-13</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/13(수) 블레이드 & 소울 2 정기점검 안내(완료)</a></div><div>2022-07-12</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 퍼플 모바일 버전 업데이트 안내</a></div><div>2022-07-11</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7월 8일(금) 운영정책 위반 계정들에 대한 게임 이용제한 안내(14차)</a></div><div>2022-07-08</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/7(목) 임시점검 안내 (완료)</a></div><div>2022-07-07</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 임시점검 안내 (완료)</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 알려진 현상 안내 (정상화)</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7월 6일(수) 신규 상품 안내</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 블레이드 & 소울 2 정기점검 안내 (완료)</a></div><div>2022-07-05</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 업데이트 사전 안내</a></div><div>2022-07-01</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[포화란: 바다뱀 보급기지] 업데이트 기념 특별 보상 퀴즈 안내</a></div><div>2022-06-29</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/20(수) 업데이트 사전 안내</a></div><div>2022-07-15</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 2022년 7월 13일 (수) 정기점검 이후 예정 사항</a></div><div>2022-07-13</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/13(수) 블레이드 & 소울 2 정기점검 안내(완료)</a></div><div>2022-07-12</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 퍼플 모바일 버전 업데이트 안내</a></div><div>2022-07-11</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7월 8일(금) 운영정책 위반 계정들에 대한 게임 이용제한 안내(14차)</a></div><div>2022-07-08</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/7(목) 임시점검 안내 (완료)</a></div><div>2022-07-07</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 임시점검 안내 (완료)</a></div><div>2022-07-06</div></div>
+                        <button id="buttonTxt" onclick="more()">더보기&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+                        <div class="hiddenTxt">
+                            <div class="mainTxtSub"><div><a href="#">[안내] 7월 6일(수) 신규 상품 안내</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 블레이드 & 소울 2 정기점검 안내 (완료)</a></div><div>2022-07-05</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 업데이트 사전 안내</a></div><div>2022-07-01</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[포화란: 바다뱀 보급기지] 업데이트 기념 특별 보상 퀴즈 안내</a></div><div>2022-06-29</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/20(수) 업데이트 사전 안내</a></div><div>2022-07-15</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 2022년 7월 13일 (수) 정기점검 이후 예정 사항</a></div><div>2022-07-13</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/13(수) 블레이드 & 소울 2 정기점검 안내(완료)</a></div><div>2022-07-12</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 퍼플 모바일 버전 업데이트 안내</a></div><div>2022-07-11</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7월 8일(금) 운영정책 위반 계정들에 대한 게임 이용제한 안내(14차)</a></div><div>2022-07-08</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/7(목) 임시점검 안내 (완료)</a></div><div>2022-07-07</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 임시점검 안내 (완료)</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 알려진 현상 안내 (정상화)</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7월 6일(수) 신규 상품 안내</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 블레이드 & 소울 2 정기점검 안내 (완료)</a></div><div>2022-07-05</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 업데이트 사전 안내</a></div><div>2022-07-01</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[포화란: 바다뱀 보급기지] 업데이트 기념 특별 보상 퀴즈 안내</a></div><div>2022-06-29</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 알려진 현상 안내 (정상화)</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7월 6일(수) 신규 상품 안내</a></div><div>2022-07-06</div></div>
+                        <div class="mainTxtSub"><div><a href="#">[안내] 7/6(수) 블레이드 & 소울 2 정기점검 안내 (완료)</a></div><div>2022-07-05</div></div> 
+                        </div>
+                    </main>
+                    <div class="footerNotice">
+                        <button id="footerBtn"><i></i></button>
+                        <footer class="footerWrap" style="position: absolute;bottom: 0; transform: translate(0);">
+                            <div class="footerImg">
+                                <div>
+                                    <a id="footerImg1" href="https://bns2.inven.co.kr/">
+                                        <!-- <img src="common/images/youtube_logo.png" alt="유튜브" title="유튜브 바로가기"> -->
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="footerImg2" href="https://www.youtube.com/channel/UCo-9ovAJ6Ffo2mEI85nw6jg">
+                                        <!-- <img src="common/images/instar_logo.png" alt="인스타그램" title="인스타그램 바로가기"> -->
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="footerImg3" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fprivacy%2Fconsent%2Fpipa%2F%3Fparams%255Bpft_surface%255D%3Dfacebook_comet%26params%255Bis_new_user_blocking_flow%255D%3Dfalse%26params%255Bpft_session_key%255D%3D11f6a15d-8a5f-4384-a439-89f3a10b74cf%26params%255Bis_existing_user_blocking_flow%255D%26source%3Dpipa_blocking_flow">
+                                        <!-- <img src="common/images/facebook_logo.png" alt="페이스북" title="페이스북 바로가기"> -->
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="footerImg4" href="https://www.instagram.com/bladeandsoul2.official/?hl=ko">
+                                        <!-- <img src="common/images/kakao_logo.png" alt="카카오톡" title="카카오톡 바로가기"> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div>
+                                <ul class="footerMenu">
+                                    <li><a href="#">회사소개</a></li>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                                    <li><a href="#"><strong>청소년 보호 정책</strong></a></li>
+                                    <li><a href="#">커뮤니티정책</a></li>
+                                    <li><a href="#">운영정책</a></li>
+                                </ul>
+                            </div>
+                            <hr style="border: 1px solid black;">
+                            <div>
+                                <address class="footerP">
+                                    상호 (주)엔씨소프트 대표 김택진 사업자 등록번호 144-85-04244 통신판매업신고 제2013-경기성남-1268호 사업자정보확인
+                                    주소 경기도 성남시 분당구 대왕판교로 644번길 12 모바일게임 고객상담 1566-7004 팩스 02-2186-3499 이메일 credit@ncsoft.com
+                                    Blade & Soul 2 ® is a registered trademark of NCSOFT Corporation. Ⓒ NCSOFT Corporation. All Rights
+                                    Reserved.
+                                </address>
+                            </div>
+                        </footer>
+                    </div>
+                </article>
+            </article>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/notice.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+        'use strict'
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }, autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+
+</html>

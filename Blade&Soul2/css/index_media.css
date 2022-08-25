@@ -1,0 +1,79 @@
+    /* PC (해상도 1024px)*/
+    @media all and (min-width:1024px) {
+    }
+
+    /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+    @media all and (min-width:768px) and (max-width:1023px) {
+      /* *{outline: 1px solid greenyellow;} */
+      #section1{background: black}
+      .navWrap{position: fixed; top: 0px !important;}
+      #playBtn{font-size: 1.5rem;}
+      .headerWrap{display: none;}
+      .mouse{display: none;}
+      video{width: 100%; height: 100%;}
+      .menuWrap>li{display: none;}
+      .navWrap{position: relative;}
+      /* .navWrap>div:first-of-type{margin-left: 50%; transform: translateX(-50%); } */
+      #allMenu{display: inline-block; position: absolute; right: 0;}
+      .sidebar li{font-size: 0.9rem;}
+        .mainTxtImage1{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%) !important;}
+        .mainTxtImage2{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%) !important;}
+        .asideItem:nth-child(1){display: none;}
+        .asideItem:nth-child(3){display: none;}
+        .asideItem{width: 50vw;}
+        .asideItem>img{width: 100%; height: 100%;}
+        #gallery{width: 100%; height: 100%;}
+        #gallery img{width: 100vw; height: 100%;}
+    
+      }
+
+    /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+    @media all and (max-width:767px) {
+
+      #section1{background: black}
+      .navWrap{position: fixed; top: 0px !important;}
+      #playBtn{font-size: 1.5rem;}
+      .headerWrap{display: none;}
+      .mouse{display: none;}
+      video{width: 100%; height: 100%;}
+      .menuWrap>li{display: none;}
+      .navWrap{position: relative;}
+      /* .navWrap>div:first-of-type{margin-left: 50%; transform: translateX(-50%); } */
+      #allMenu{display: inline-block; position: absolute; right: 0;}
+      .sidebar li{font-size: 0.9rem;}
+        .asideItem:not(:first-child,:last-child){display: none;}
+        .asideItem{width: 100vw;}
+        .asideItem>img{width: 100%; height:100%;}
+        .sidebar{width: 50vw;}
+        #gallery{width: 100%; height: 100%;}
+        #gallery img{width: 100vw; height: 100%;}
+        main{position: relative;}
+        #mainP{position: absolute; z-index: 2; bottom: 0px; margin-top: 60vh; color: darkred;}
+        #mainP>h1{font-size: 1.2rem; white-space: nowrap;}
+        #mainP>h5{font-size: 0.9rem;}
+        .mainIfMenu>li{width: 100%;}
+        .mainIfMenu>li:not(:first-child){display: none;}
+        .mainTxtImage1,.mainTxtImage2{display: none;}
+        #txtAction{font-size: 0.8rem;}
+        .asideItemTxt{display: none;}
+        aside{position: absolute; top: 50%; transform: translateY(-50%); display: flex; justify-content: space-between; width: 100vw; z-index: 0;}
+        .mainTxt{margin-top: 30px;}
+        #title{font-size: 3rem;}
+        .mainTxt>p{display: none;}
+        #playBtn{width: 40vw; height: 20vw;}
+        #playBtn>h2{font-size: 2vw;}
+        #playBtn>.app{display: none; top: 15vw; grid-template-columns: 1fr 1fr; width: 200%; height: 30vw;}
+        #playBtn>.app img{width: 100%; height: 100%;}
+        .app a:hover{height: auto;}
+        .section3sub{display: none;}
+        #section4{position: relative;}
+        #title{font-size: 3vw; margin-top: 30vw;}
+        .footerMenu{white-space: nowrap;}
+        .footerMenu>li{margin: 0 1vw;}
+        .footerWrap{width: 100vw; height: 20vh; transform: translateY(0) !important;}
+        .footerP{display: none;}
+         #footerBtn{display: none;}
+        .txtAction{white-space: noWrap;}
+        .footerImg a{width: 5vw; height: 5vw;}
+        #eventBtnWrap{display: none;}
+    }

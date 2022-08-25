@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url(./core.css);
+
+/* * {outline: 1px solid red;} */
+
+html,body {font-size: 16px; font-family: 'Noto Sans KR', sans-serif;}
+
+/*================================Header======================================================*/
+
+#top_nav {width: 100%; height: 3vw; position: relative; z-index: 5; color: #fff; transition: 0.5s}
+#top_nav.active {background-color: #fff; transition: 0.5s}
+#top_nav.bg {background-color: #fff;}
+.top_nav_in {width: 80%; height: 3vw; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+.top_nav_list {width: 20%;}
+.top_nav_list li {padding: 0 2%;}
+
+
+#sealife {color: #fff; border: none;}
+#sealife:focus {color: #333;}
+#sealife.active {color: #888;}
+#language {color: #fff; border: none;}
+#language:focus {color: #333;}
+#language.active {color: #888;}
+
+#header {width: 100%; height: 2.5vw; overflow: hidden; transition: 0.5s; position: relative; z-index: 5; color: #fff;}
+#header.active {height: 14vw; transition: 0.5s; background-color: #fff; color: #888;}
+#header.bg {background-color: #fff;}
+
+.header_in {width: 80%; margin: 0 auto; display: flex; justify-content: space-between;}
+
+#logo {width: 15%; height: 2.5vw; display: flex; align-items: center; justify-content: center;}
+#logo img {height: 100%;}
+.header_navi {width: 85%;}
+.header_navi_in {width: 12.5%; font-size: 1.1rem; text-align: center;}
+.header_navi_in:hover > a {color: #3481dc; border-bottom: 1px solid #3481dc; box-sizing: border-box;}
+.header_navi_in > a {height: 2.5vw; line-height: 2.5vw; margin-bottom: 15%;}
+
+.header_sub {display: flex; flex-direction: column; font-size: 0.9rem;}
+.header_sub li a {padding: 5% 0;}
+
+/*================================footer======================================================*/
+
+footer{width: 100%; height: 26vw; background: #333; color: rgba(255, 255, 255, 0.7);}
+#footerContainer{width: 100%; height: 18vw;}
+#footerWrap{display: flex; justify-content: space-between; width: 80%; height: 100%; margin: 0 auto;}
+#footerWrap>.footerMenu{text-align: center; width: 20%; height: 100%;}
+#footerWrap>.footerMenu>ul{width: 100%; height: 100%; display: flex; flex-direction: column;}
+#footerWrap>.footerMenu>ul>li{padding: 3% 0;}
+#footerWrap>.footerMenu>ul>li:first-child{font-size: 1.1rem; padding-top: 15%; color: #fff; font-weight: bold;}
+.bottomBar{width: 80%; margin: 0 auto; height: 1px; background: rgba(255, 255, 255, 0.7);}
+address{padding: 1% 0; font-style: normal; width: 80%; margin: 0 auto; height: 7vw;}

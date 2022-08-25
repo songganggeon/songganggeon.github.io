@@ -1,0 +1,57 @@
+@import url(./core.css);
+
+/* * {outline: 1px solid red;} */
+
+html,body {width: 100%; height: auto;}
+
+.center {display: flex; align-items: center; justify-content: center;}
+
+/*=========================================HEADER+++++++++++++++++++++++++++++++++*/
+
+#head {width: 97%; height: 100vh; margin-top: -5vh; background: url(../img/99BB43455E8108F209.gif) no-repeat center/cover;}
+
+#navBar {
+    width: 97%; height: 5vh; position: sticky; position: -webkit-sticky; top: 0; color: #fff;
+    display: flex; align-items: center; justify-content: space-between; background-color: none;
+}
+#navBar:hover {background-color: #fff; color: #444;}
+#logo {
+    width: 10%; height: inherit; font-size: 1.5vw; color: #fff;
+    position: relative; display: flex; align-items: center; justify-content: center; 
+}
+#navBar:hover #logo {background-color: #fff; color: #444;}
+.navnav {width: 90%; height: inherit; display: flex; justify-content: space-between; align-items: center;}
+.navnav li {width: 20%; height: inherit;}
+.navnav li a {width: inherit; height: inherit; display: flex; align-items: center; justify-content: center; font-size: 1.5vw;}
+.navnav ul {position: relative;}
+.navnav li {width: 100%; height: 5vh;}
+
+
+.navnav ul {display: none;}
+.navnav li:hover ul {display: block; background-color: #fff;}
+
+/*========================================SIDE++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#side {width: 5vw; height: 100vh; position: fixed; top: 0; right: 0; background-color: #444; transition: all 0.5s;}
+#side.active {width: 100%; transition: all 0.8s;}
+
+.sideBtn {width: 5vw; height: 5vh; color: #fff; position: absolute; top: 0; right: 0; font-size: 1.2vw;}
+
+.sideIcon {display: flex; flex-direction: column; position: relative; top: 80vh;}
+.sideIcon li {width: 100%; height: 5vh; color: #fff; font-size: 1.2vw;}
+.sideIcon li a {width: 100%; height: inherit; display: flex; align-items: center; justify-content: center;}
+
+
+/*======================================ARTICLE================================================*/
+
+#main01 {width: 97%; height: 50vh; background-color: cornflowerblue; display: flex; justify-content: space-around; align-items: center;}
+.content {width: 30%; height: 40vh; background-color: burlywood ;}
+
+#main02 {width: 97%; height: 50vh; background-color: darkseagreen;}
+
+
+/*======================================FOOTER====================================================*/
+
+#fot {width: 97%; height: 20vh; background-color: cadetblue;}
+#fot address {width: 90%; height: 7vh; font-style: normal; font-size: 1vw;}
+
