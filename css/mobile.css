@@ -1,0 +1,65 @@
+@media (max-width: 575px) {
+      #section01>main>#mainWrap>h4{font-size: 8vw !important;}
+      #section01>main>#mainWrap>h2{font-size: 6vw !important;}
+      #section01>main>#mainWrap>p{font-size: 4vw !important;}
+      #section01>main>#mainWrap>.button--wayra {
+            width: 30vw !important;
+            height: 20vw !important;
+            font-size: 3vw !important;
+          }
+      #section01>.full{top: 5vw !important; right: 5vw !important; font-size: 8vw !important;}
+      #section01>.full2{top: 5vw !important; right: 18vw !important; font-size: 8vw !important;}
+      #section01>main>.mouse{animation: mouseMobile 1s ease-in-out  infinite !important; width: 8vw !important; height: 8vw !important;}
+       @keyframes mouseMobile{
+        0%{bottom: 10vw;}
+        50%{bottom: 10.5vw;}
+        100%{bottom: 10vw;}
+      }
+      #section02{background: url('../images/night.jpg') no-repeat center/cover;}
+      #section02>.aboutWrap{height: 100% !important; color: #fbfcb9;}
+      #section02>.aboutWrap>.title{padding-top: 30vw !important; justify-content: flex-start !important; height: auto !important;}
+      #section02>.aboutWrap>.title>h4{font-size: 4vw !important;}
+      #section02>.aboutWrap>.title>h2{font-size: 6vw !important;}
+      #section02>.aboutWrap>.about-self{width: 100%; display: flex;justify-content: space-between;}
+      #section02>.aboutWrap>.about-self>.right{position: absolute; z-index: -1; width: 30vw; height: 30vw; border-radius: 50%; overflow: hidden;transition: all 0.1s;}
+      #section02>.aboutWrap>.about-self>.right>img{width: 100%; height: 100%; transition: 0.3s;}
+      #section02>.aboutWrap>.about-self>.left{width: 35vw; height: 50% !important;}
+      #section02>.aboutWrap>.about-self>.left>h3{font-size: 3vw !important; transform: translateX(0) !important;}
+      #section02>.aboutWrap>.about-self>.left>p{font-size: 1.5vw; display: block; width: 100%;}
+      #section02>.aboutWrap>.about-self>.left>.social {
+        height: 30vw !important;
+        margin-top: 20vw !important;
+        color: #fff !important;
+        width: 100% !important;
+        transform: translateY(0) !important;
+        font-size: 8vw !important;
+      }
+      .mediaImg{border-radius: 30%; overflow: hidden; display: block !important; position: absolute; right: 5vw; top: 83vw !important; width: 50%; height: 30%;}
+      .mediaImg>img{width: 100%; height: 100%;}
+      #clickImg{width: 30% !important;}
+      #section03{opacity: 1 !important; height: 60% !important;}
+      .iconWrap>ul>.icon{flex-direction: column !important; margin: 0 auto !important;}
+      #section03>video{display: none;}
+      canvas{width: 400px !important; height: 400px !important;}
+      #midWrap{display: flex;justify-content: center; width: 100%; height: 40% !important; transform: translateY(0) !important; background: transparent;}
+      #midWrap>#card{width: 50% !important; height: 80% !important;}
+        figure.effect-moses h2,
+        figure.effect-moses p {
+          display: none !important;
+        }
+        .sectionEnd {
+          background: url('images/night.jpg');
+          display: flex;
+          flex-direction: column !important;
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+      .scrollbar{display: none;}
+      .portImg{position: relative; width: 100vw !important; height: 50vh !important;}
+      .lastTxt{transform: translateX(-2%) !important; width: 100vw !important;}
+      .lastTxt>p{font-size: 4vw !important;}
+      .lastTxt>p>span:first-child{font-size: 7vw !important;}
+      .lastTxt>p>span:nth-child(2){font-size: 6vw !important;}
+      .iconWrap>ul>li>.closeBtn>i{font-size: 8vw !important;}
+    }
