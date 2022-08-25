@@ -22,12 +22,20 @@ const gnbLi = document.querySelectorAll('#gnb>li');
 
 
 function gnbChange(){
-gnbLi[0].innerText = "HISTORY"
+/* gnbLi[0].innerText = "HISTORY"
 gnbLi[1].innerText = "THECHNOLOGY"
 gnbLi[2].innerText = "SLOGAN"
-gnbLi[3].innerText = "Dr.Bose"
+gnbLi[3].innerText = "Dr.Bose" */
+  document.querySelector('.subMenu').style.display = "none"
+  document.getElementById('gnbBg').style.display = "none"
+  gnbLi[0].innerHTML = "<p class='newMenu newMenu1'>HISTORY</p>"
+  gnbLi[1].innerHTML = "<p class='newMenu newMenu2'>THECHNOLOGY</p>"
+  gnbLi[2].innerHTML = "<p class='newMenu newMenu3'>SLOGAN</p>"
+  gnbLi[3].innerHTML = "<p class='newMenu newMenu4'>Dr.Bose</p>"
 }
 function gnbChangeNone(){
+  document.querySelector('.subMenu').style.display = "flex"
+  document.getElementById('gnbBg').style.display = "block"
   gnbLi[0].innerHTML = `<li style="cursor: pointer;" onclick="notHover()">Event</li>`
   gnbLi[1].innerHTML = `<li><a id="product" href="product.html">Products</a></li>`
   gnbLi[2].innerHTML = `<li><a id="store" href="store.html">Store</a></li>`

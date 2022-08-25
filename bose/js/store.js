@@ -19,10 +19,10 @@ h3Event[2].style.transition = 'all 0.7s'
 h3Event[3].style.transition = 'all 1s'
 h3Event[4].style.transition = 'all 1.2s'
 middle2Img.addEventListener('mouseover', () => {
-    middle2Img.src = '../common/images/subMid_hover1.png'
+    middle2Img.src = 'common/images/subMid_hover1.png'
 })
 middle2Img.addEventListener('mouseout', () => {
-    middle2Img.src = '../common/images/subMid.png'
+    middle2Img.src = 'common/images/subMid.png'
 })
 
 function leftEvent(){
