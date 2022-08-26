@@ -185,19 +185,20 @@ window.addEventListener('wheel',(e) => {
   if(scrollEvent > 0 || scrollEvent > seciton1Height){
     for(i = 0;i < scrollEvent;i++){
     
-      /* document.body.transform = `translate3d(0px, -${i}px, 0px);`   */
-      seciton1.style.transform = `translateY(-${i}px)`;
 
-      /* seciton2.style.transform = `translate3d(0px, -${i}px, 0px);`
- */
+ /*      seciton1.style.transform = `translate3d(0,-${i}px,0)`; */
+      seciton2.style.transform = `translate3d(0,-${i}px,0)`;
+      section3.style.transform = `translateY(-${i - 500}px)`;
+      section4.style.transform = `translateY(-100%)`
+/*       seciton1.style.transform = `translateY(-${i}px)`;
       seciton2.style.transform = `translateY(-${i - 20}px)`;
       section3.style.transform = `translateY(-${i - 500}px)`;
-      /* section3.style.transform = `translate3d(0px, -${i}px, 0px);` */
-      section4.style.transform = `translateY(-100%)`
+      section4.style.transform = `translateY(-100%)` */
+
     }
   } else {
-    seciton1.style.transform = `translateY(0)`
-    seciton2.style.transform = `translateY(0)`
+/*     seciton1.style.transform = `translateY(0)`
+    seciton2.style.transform = `translateY(0)` */
   }
   if(scrollEvent > 329){
     leftH3.style.transform = `translateX(0)`
