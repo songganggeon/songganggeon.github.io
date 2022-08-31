@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="부산 씨라이프">
+    <meta property="og:description" content="SEA LIFE">
+    <meta property="og:image" content="imaegs/logo2.png">
+    <meta name="description" content="해운대 아쿠아리움에 오신 걸 환영합니다.">
+    <meta name="keywords" content="씨라이프,부산,부산 볼거리,아쿠아리움,busan,sealife">
+    <script src="https://kit.fontawesome.com/5a6bee9b00.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo2.png">
     <title>SEA LIFE</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <!-- 로딩창 -->
+    <div class="loaderWrap">
+        <h2>SEA LIFE</h2>
+        <h3>부산 아쿠아리움</h3>
+        <video autoplay muted loop src="images/vd_loding.mp4"></video>
+    </div>
     <div id="mainpage">
         <nav id="top_nav">
             <div class="top_nav_in">
@@ -16,17 +29,17 @@
                     <li>
                         <select name="SEALIFE WORLD" id="sealife">
                             <option value="w01" class="option01"><img src="./images/icon_global.png" alt="go"> SEALIFE WORLD</option>
-                            <option value="w01">option01</option>
-                            <option value="w01">option01</option>
-                            <option value="w01">option01</option>
+                            <option value="w01">Asia</option>
+                            <option value="w01">Euro</option>
+                            <option value="w01">America</option>
                         </select>  
                     </li>
                     <li>
                         <select name="language" id="language">
                             <option value="w01" class="option01">LANGUAGE</option>
-                            <option value="w01">option01</option>
-                            <option value="w01">option01</option>
-                            <option value="w01">option01</option>
+                            <option value="w01">English</option>
+                            <option value="w01">Korea</option>
+                            <option value="w01">日本语</option>
                         </select>  
                     </li>
                 </ul>
@@ -80,8 +93,8 @@
                             <li><a href="#">자주 묻는 질문</a></li>
                         </ul>
                     </li>
-                    <li class="header_navi_in"><a href="#">LOGIN</a></li>
-                    <li class="header_navi_in"><a href="#">TICKET</a></li>
+                    <li class="header_navi_in"><a href="#"><i class="fa-solid fa-user"></i> LOGIN</a></li>
+                    <li class="header_navi_in"><a href="#"><i class="fa-solid fa-ticket"></i> TICKET</a></li>
                 </ul> 
             </div>
         </header>
@@ -97,6 +110,17 @@
                 <div><img src="./images/icon_map.png" alt="map"> 씨라이프 오는길</div>
             </div>
         </div>        
+    </div>
+
+    <!-- 사이드 호버 -->
+    <div id="sideMenu">
+        <aside class="aside_container">
+            <div class="aside_item"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+            <div class="aside_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="aside_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="aside_item"><a href="#"><i class="fa-brands fa-blogger"></i></a></div>
+            <div class="aside_item" onclick="window.scrollTo(0,0)"><i class="fa-solid fa-angles-up"></i><span>TOP</span></div>
+        </aside>
     </div>
 
     <div id="s01">
@@ -126,7 +150,7 @@
                     <div class="s01_txt02">상어먹이주기 공연</div>
                 </div>
                 <div class="s01_content_hover s01_box_02">
-                    <div class="s01_title_in">산호마을 인어공주 공연</div>
+                    <div class="s01_title_in">상어먹이주기 공연</div>
                     <p class="s01_txt txt04">
                         바다오염으로 검게 변한 바다요정. 인어공주의 <br>
                         마법의 주문으로 아름다움을 되찾을 수 있을까요? <br>
@@ -204,12 +228,13 @@
             </div>
         </main>
     </section>
-    <section class="section" id="section4">
-        <div class="section4Txt">  
+    <section class="section" id="section4" style="position:relative;">
+        <video style="position:absolute; top: 0; left: 0; z-index: 1;" autoplay muted loop src="images/vd_section4.mp4"></video>
+        <div class="section4Txt" style="position:absolute; left: 50%; transform: translateX(-50%); z-index: 2; text-shadow: 1px 1   px 0 gray;"> 
             <h2>Connect us</h2>
             <h4>씨라이프의 소식들을 한번 확인해보세요</h4>
         </div>
-        <div id="section4Wrap">
+        <div id="section4Wrap" style="position:absolute; z-index: 2; top: 80%; left: 50%; transform: translate(-50%,-80%);">
             <div class="section4item">
                 <h3>공지사항</h3>
                 <h1>SEA LIFE 부산 8/3 인어공주<br>
@@ -221,7 +246,7 @@
             </div>
             <div class="section4item">
                 <h3>공지사항</h3>
-                <h1>SEA LIFE 부산 8/3 인어공주<br>
+                <h1>SEA LIFE 부산 7/6 인어공주<br>
                 공연조정 공지
                 </h1>
                 <a href="#" class="btn6">
@@ -308,7 +333,17 @@
             대표전화 051-740-1700 ｜ 팩스 051-740-1717 ｜ 단체문의 051-740-1711
         </address>
     </footer>
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
+<script src="./js/scroll.js">   </script>
+<script>
+    window.onload = () => {
+    loaders();}
+
+    function loaders(){
+    $('.loaderWrap').delay(1500).fadeOut();
+    
+    }
+</script>
 </body>
 </html>
