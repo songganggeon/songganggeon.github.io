@@ -18,8 +18,8 @@ window.addEventListener('scroll', () => {
   const section05_txt_inAll = document.querySelectorAll('.section05_txt_in')
   const section05_imgAll = document.querySelectorAll('.section05_img')
   const extraHead = document.querySelector('.extraHead');
-
-
+  const section04_title = document.querySelector('.section04_title')
+  const section04_txt = document.querySelector('.section04_txt')
   
   document.body.style.overflowX = "hidden"
   seaLifeHeader.style.transform = "translateY(200%)"
@@ -86,7 +86,15 @@ window.addEventListener('scroll', () => {
   extraHead.style.opacity = "0"
   extraHead.style.transition = "all 0.7s"
 
-  
+  section04_title.style.transform = "translateY(200%)"
+  section04_title.style.opacity = "0"
+  section04_title.style.transition = "all 0.7s"
+
+  section04_txt.style.transform = "translateY(200%)"
+  section04_txt.style.opacity = "0"
+  section04_txt.style.transition = "all 1.4s"
+
+
   if(scrollY > 600){
     seaLifeHeader.style.transform = "translateY(0%)"
     seaLifeHeader.style.opacity = "1"
@@ -124,6 +132,17 @@ window.addEventListener('scroll', () => {
       seaLifeHeader2.style.opacity = "0"
       section03_vision_logo.style.opacity = "0"
     }
+  if(scrollY > 2400){
+    section04_title.style.transform = "translateY(0%)"
+    section04_txt.style.transform = "translateY(0%)"
+    section04_title.style.opacity = "1"
+    section04_txt.style.opacity = "1"
+  } else {
+    section04_title.style.transform = "translateY(200%)"
+    section04_txt.style.transform = "translateY(200%)"
+    section04_title.style.opacity = "0"
+    section04_txt.style.opacity = "0"
+  }
     if(scrollY > 3400){
       seaLifeHeader3.style.transform = "translateY(0%)"
       seaLifeHeader3.style.opacity = "1"
