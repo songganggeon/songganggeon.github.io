@@ -1,2 +1,239 @@
 @import url('common.css');
 @import url('core.css');
+
+#mainpage {width: 100%; height: 50vw;}
+.main_bg {
+    width: 100%; height: 50vw; position: absolute; top: 0; 
+    display: flex; flex-direction: column; justify-content: space-between;
+    background: url(../images/backimage_.jpg) no-repeat center/cover;
+}
+.main_txt {width: 80%; height: 50%; margin: 0 auto; font-size: 3.5rem; color: #fff; font-weight: bold;}
+.main_txt span {color: #a9faff; animation: mainTxt 1s linear;}
+@keyframes mainTxt{
+    0%{filter: hue-rotate(0deg);}
+    100%{filter: hue-rotate(360deg);}
+
+}
+.main_txt p {font-size: 1.6rem; font-weight: normal;}
+
+.sealifeColor {color: #6bbee1;}
+
+#section01 {
+    width: 100%; height: 45vw;
+}
+#section02 {
+    width: 100%; height: 38vw;
+    margin: 0 auto;
+    padding-top: 12%;
+    background-color: #efefef;
+}
+#section04 {width: 100%; height: auto; padding-top: 10%;}
+
+.section04_title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.section04_txt {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #888;
+    padding: 1% 0;
+}
+.section04_content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.section04_cicle {
+    width: 17vw; height: 17vw;
+    background-color: #6bbee1;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: circle 1s ease-in-out infinite;
+}
+
+/* @keyframes circle{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+} */
+
+.section04_cicle_in {
+    width: 14vw; height: 14vw;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 4px #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.section04_line {
+    width: 80%; height: 3px;
+    margin: 0 auto;
+    z-index: 0;
+    background-color: #6bbee1;
+    position: relative;
+    top: -18.5vw;
+}
+
+#section05 {
+    width: 100%; height: 42vw;
+    background-color: #efefef;
+}
+.seaLifeHeader {
+    width: auto;
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+    padding-top: 4%;
+}
+.section05_title_line {
+    width: 450px; height: 20px;
+    margin: 0 auto;
+    background-color: #6bbee1;
+    position: relative;
+    top: -20px;
+    z-index: 0;
+    margin-bottom: 6%;
+}
+.section05_title_line02 {
+    width: 180px; height: 20px;
+    margin: 0 auto;
+    background-color: #6bbee1;
+    position: relative;
+    top: -20px;
+}
+.section05_content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section05_img {
+    width: 50%;
+}
+.section05_img img {
+    width: 100%;
+}
+.section05_txt {
+    text-align: end;
+}
+.section05_title01 {
+    font-size: 2.5rem;
+}
+.section05_title02 {
+    font-size: 2rem;
+    padding: 8% 0;
+}
+.section05_txt_in {
+    color: #888;
+    line-height: 2rem;
+}
+.about-space {width: 100%; height: 4vw;}
+#section06 {
+    width: 100%; height: 30vw;
+    margin: 0 auto;
+    padding-top: 15%;
+}
+.section06_txt {
+    text-align: left;
+}
+#section07 {
+    width: 100%; height: 37vw;
+    margin: 0 auto;
+    padding-top: 10%;
+    background-color: #efefef;
+    margin-top: -1%;
+}
+.section07_content {
+    padding-top: 3%;
+}
+.section08_item_list {
+    width: 70%;
+    margin: 0 auto;
+}
+.section08_item_list_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.section08_item_list_bottom img {
+  width: 100%; height: 100%;
+}
+
+.section08_item_list_bottom:nth-child(1) {
+    margin: 6% 0 8%;
+}
+.section08_item_list_in {
+    cursor: pointer;
+    width: 16%; height: 10vw;
+    border-top: none;
+}
+.section08_item_list_in:hover{
+  box-shadow: 0px 1px 8px #999;
+}
+.extraHead {
+    padding-top: 6%;
+}
+.seaLifeMe {
+    width: 270px;
+}
+.seaLifeMeA {
+    background: #4dd5ff;
+    width: 240px;
+}
+.section03_vision {
+    width: 80%; height: 26.6vw;
+    margin: 0 auto;
+    background: url(../images/about/vision.jpg) no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secstion03_vision_in {
+    width: 80%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section03_vision_logo {
+    width: 40%;
+}
+.section03_vision_logo img {
+    width: 100%; opacity: 0; transition: all 1.5s;
+}
+.section03_vision_txt {
+    color: #fff;
+}
+.section03_vision_title {
+    font-size: 1.5rem;
+    padding: 5% 0;
+    display: block;
+}
+.section03_vision_title span, .section03_vistion_title_in span {
+    color: aquamarine;
+}
+.section03_vistion_title_in {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* 사이드 메뉴 */
+#sideMenu{transform: translateX(100%); transition: all 0.7s; font-size: 2rem; color: #fff; text-align: center; z-index: 1000; display: flex; flex-direction: column; justify-content: flex-end; position: fixed; top: 0; right: 0; width: 3%; height: 100%; background: #3480dc80;}
+.aside_item:not(:last-child):hover{color: #3481dc; animation: aside_hover 1.5s ease-in-out infinite;}
+.aside_item span{display: block; font-size: 1rem !important;}
+.aside_item:last-child{padding: 40% 0; cursor: pointer;}
+
+@keyframes aside_hover{
+    0%{filter: hue-rotate(0deg);}
+    100%{filter: hue-rotate(360deg);}
+}

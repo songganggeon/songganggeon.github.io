@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="부산 씨라이프">
+    <meta property="og:description" content="SEA LIFE">
+    <meta property="og:image" content="imaegs/logo2.png">
+    <meta name="description" content="해운대 아쿠아리움에 오신 걸 환영합니다.">
+    <meta name="keywords" content="씨라이프,부산,부산 볼거리,아쿠아리움,busan,sealife">
+    <script src="https://kit.fontawesome.com/5a6bee9b00.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo2.png">
+    <title>SEA LIFE</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+    canvas {
+        display: block;
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        background: transparent; z-index: 999;
+      }
+      .main_txt{transition: all 0.7s;}
+    </style>
+</head>
+<body>
+    <div id="mainpage">
+        <nav id="top_nav">
+            <div class="top_nav_in">
+                <div></div>
+                <ul class="top_nav_list">
+                    <li>
+                        <select name="SEALIFE WORLD" id="sealife">
+                            <option value="w01" class="option01"><img src="./images/icon_global.png" alt="go"> SEALIFE WORLD</option>
+                            <option value="w01">Asia</option>
+                            <option value="w01">Euro</option>
+                            <option value="w01">America</option>
+                        </select>  
+                    </li>
+                    <li>
+                        <select name="language" id="language">
+                            <option value="w01" class="option01">LANGUAGE</option>
+                            <option value="w01">English</option>
+                            <option value="w01">Korea</option>
+                            <option value="w01">日本语</option>
+                        </select>  
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header id="header">
+            <div class="header_in">
+                <div id="logo">
+                        <img src="./images/logo.png" alt="logo" class="logo_in">
+                </div>
+                <ul class="header_navi">
+                    <li class="header_navi_in"><a style="color: rgb(0, 162, 255);" href="about.html">부산씨라이프</a>
+                        <ul class="header_sub">
+                            <li><a href="about.html" style="color: rgb(0, 162, 255);">부산씨라이프 소개</a></li>
+                            <li><a href="ending.html" style="color: rgb(0, 162, 255);">부산씨라이프 친구들</a></li>
+                            <li><a href="#">해양보호 프로그램</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_navi_in"><a href="#">이용안내</a>
+                        <ul class="header_sub">
+                            <li><a href="#">이용시간, 요금 안내</a></li>
+                            <li><a href="#">층별안내</a></li>
+                            <li><a href="#">장예인 편의시설</a></li>
+                            <li><a href="#">주변시설 안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_navi_in"><a href="#">프로그램</a>
+                        <ul class="header_sub">
+                            <li><a href="#">프로그램 일정</a></li>
+                            <li><a href="#">공연</a></li>
+                            <li><a href="#">체험관</a></li>
+                            <li><a href="#">전시관&포토존</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_navi_in"><a href="#">단체안내</a>
+                        <ul class="header_sub">
+                            <li><a href="#">프로그램 일정</a></li>
+                            <li><a href="#">공연</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_navi_in"><a href="#">혜택</a>
+                        <ul class="header_sub">
+                            <li><a href="#">제휴 할인정보</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">SEA LIFE 프리미어</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_navi_in"><a href="#">CONTACT</a>
+                        <ul class="header_sub">    
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_navi_in"><a href="#"><i class="fa-solid fa-user"></i> LOGIN</a></li>
+                    <li class="header_navi_in"><a href="#"><i class="fa-solid fa-ticket"></i> TICKET</a></li>
+                </ul> 
+            </div>
+        </header>
+       <div class="main_bg" style="width: 100%; height:100%">
+            <div class="main_txt" style="position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 10000;">
+                <h2>지금까지 탈주금지조였습니다<br>다들 너무 고생 많으셨습니다<br>감사합니다!</h2>
+            </div>
+            <video src="images/sea.mp4" autoplay muted loop></video>
+            <canvas id="canvas" width="1400" height="1200"></canvas>
+       </div>        
+       <section style="width: 100%; height: 65%">
+        
+       </section>
+    <!-- 사이드 호버 -->
+    <div id="sideMenu">
+        <aside class="aside_container">
+            <div class="aside_item"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+            <div class="aside_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="aside_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="aside_item"><a href="#"><i class="fa-brands fa-blogger"></i></a></div>
+            <div class="aside_item" onclick="window.scrollTo(0,0)"><i class="fa-solid fa-angles-up"></i><span>TOP</span></div>
+        </aside>
+    </div>
+    <footer style="position:relative;">
+        <div id="footerContainer">
+        <div id="footerWrap">
+            <div class="footerMenu footerMenu1">
+                <ul>
+                <li><a href="#">이용안내&amp;단체</a></li>
+                <li><a href="#">온라인 입장권</a></li>
+                <li><a href="#">티켓 구매하기</a></li>
+                <li><a href="#">SEA LIFE 연간회원권</a></li>
+                <li><a href="#">제휴 할인정보</a></li>
+                <li><a href="#">학생 단체 예약</a></li>
+                <li><a href="#">일반 단체 예약</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu footerMenu2">
+                <ul>
+                    <li><a href="#">SEALIFE 부산 안내</a></li>
+                    <li><a href="#">운영시간</a></li>
+                    <li><a href="#">위치&amp;주차시간</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">안전 수칙</a></li>
+                    <li><a href="#">장애인 편의 시설</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu footerMenu3">
+                <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">기업비전</a></li>
+                <li><a href="#">최신뉴스</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">협력업체</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu footerMenu4">
+                <ul>
+                    <li><a href="#">정책</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리 방침</a></li>
+                    <li><a href="#">마케팅 정보 사용</a></li>
+                    <li><a href="#">제휴 문의</a></li>
+                    <li><a href="#">장애인 편의시설</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu footerMenu5">
+                <ul>
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">SNS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottomBar"></div>
+        <address>
+            48100 부산광역시 해운대구 해운대해변로 266(중동) (주)멀린엔터테인먼트코리아<br><br>
+            사업자등록번호 617-61-61162 ｜ 대표이사 이성호,로버트마크스미스 ｜ 통신판매업신고번호 제 2006-부산해운-66423 호<br><br>
+            대표전화 051-740-1700 ｜ 팩스 051-740-1717 ｜ 단체문의 051-740-1711
+        </address>
+    </footer>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+<script src="./js/scroll.js"></script>
+  <script type="importmap">
+    {
+      "imports" : {
+        "three" : "https://unpkg.com/three@0.141.0/build/three.module.js",
+        "GLTFLoader" : "https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js"
+      }
+    }
+  </script>
+  <script type="module">
+    import {GLTFLoader} from 'GLTFLoader';
+    import * as THREE from 'three';
+
+    let scene = new THREE.Scene();
+    let renderer = new THREE.WebGLRenderer({
+      canvas : document.querySelector('#canvas'),
+      antialias : true
+    })
+    renderer.outputEncoding = THREE.sRGBEncoding;
+
+    let camera = new THREE.PerspectiveCamera(420,1);
+    camera.position.set(10,10,1500);
+
+    renderer.setClearColor(0x000000, 0); // the default
+    /* scene.background = new THREE.Color("#0xff0000"); */
+    /* let light = new THREE.DirectionalLight(0xffffff, 10);
+    scene.add(light); */
+  let light = new THREE.SpotLight(0xffa95c, 4); light.position.set(100, 1000, 0); light.castShadow = true; 
+  scene.add(light);
+  
+  let loader = new GLTFLoader();
+  loader.setCrossOrigin("anonymous");
+  loader.load('images/blue_whale_-_textured/scene.gltf' ,function(gltf){
+      scene.add(gltf.scene);
+      function animate(){
+          requestAnimationFrame(animate)
+          gltf.scene.rotation.y += 0.001
+          gltf.scene.rotation.x += 0.0001
+          
+          if(gltf.scene.rotation.y === 0.1){
+            gltf.scene.rotation.y = 0.1
+            gltf.scene.rotation.x = 0.001
+          }
+renderer.render(scene, camera);
+}
+      animate()
+    });
+    
+    setTimeout(() => {
+        document.querySelector('.main_txt').style.opacity = "0"
+    },5000)
+  </script>
+</body>
+</html>

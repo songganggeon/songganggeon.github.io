@@ -1,10 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-@import url(./core.css);
+@import url('./core.css');
 
 /* * {outline: 1px solid red;} */
 
 html,body {font-size: 16px; font-family: 'Noto Sans KR', sans-serif;}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #3481dc;
+  border-radius: 0 0 10px 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, .1);
+}
 
 /*================================Header======================================================*/
 

@@ -15,12 +15,6 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <!-- 로딩창 -->
-    <div class="loaderWrap">
-        <h2>SEA LIFE</h2>
-        <h3>부산 아쿠아리움</h3>
-        <video autoplay muted loop src="images/vd_loding.mp4"></video>
-    </div>
     <div id="mainpage">
         <nav id="top_nav">
             <div class="top_nav_in">
@@ -47,12 +41,14 @@
         </nav>
         <header id="header">
             <div class="header_in">
-                <div id="logo"><img src="./images/logo.png" alt="logo" class="logo_in"></div>
+                <div id="logo">
+                        <img src="./images/logo.png" alt="logo" class="logo_in">
+                </div>
                 <ul class="header_navi">
-                    <li class="header_navi_in"><a href="#">부산씨라이프</a>
+                    <li class="header_navi_in"><a style="color: rgb(0, 162, 255);" href="about.html">부산씨라이프</a>
                         <ul class="header_sub">
-                            <li><a href="#">부산씨라이프 소개</a></li>
-                            <li><a href="#">부산씨라이프 친구들</a></li>
+                            <li><a href="about.html" style="color: rgb(0, 162, 255);">부산씨라이프 소개</a></li>
+                            <li><a href="ending.html" style="color: rgb(0, 162, 255);">부산씨라이프 친구들</a></li>
                             <li><a href="#">해양보호 프로그램</a></li>
                             <li><a href="#">오시는 길</a></li>
                         </ul>
@@ -98,7 +94,7 @@
                 </ul> 
             </div>
         </header>
-        <div class="main_bg">
+       <div class="main_bg">
             <div></div>
             <div class="main_txt">
                 <span>SEA LIFE</span> 부산아쿠아리움
@@ -110,7 +106,7 @@
                 <div><img src="./images/icon_map.png" alt="map"> 씨라이프 오는길</div>
             </div>
         </div>        
-    </div>
+    </div> 
 
     <!-- 사이드 호버 -->
     <div id="sideMenu">
@@ -335,15 +331,6 @@
     </footer>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
-<script src="./js/scroll.js">   </script>
-<script>
-    window.onload = () => {
-    loaders();}
-
-    function loaders(){
-    $('.loaderWrap').delay(1500).fadeOut();
-    
-    }
-</script>
+<script src="./js/scroll.js"></script>
 </body>
 </html>

@@ -14,6 +14,9 @@ window.addEventListener('scroll', () => {
   const s04_item = document.querySelectorAll('.section4item');
   const sideMenu = document.getElementById('sideMenu');
 
+  setTimeout(() => {
+    document.documentElement.style.setProperty('--txt-change','#a9faff')
+  },3000)
 
   if (scrollY > 400 && scrollY < 1200){
     s01_span.style.transform = "translateX(0)"
